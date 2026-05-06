@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: grade-submission-portal
+  labels:
+    app.kubernetes.io/name: grade-submission
 spec:
   type: NodePort
   selector:
